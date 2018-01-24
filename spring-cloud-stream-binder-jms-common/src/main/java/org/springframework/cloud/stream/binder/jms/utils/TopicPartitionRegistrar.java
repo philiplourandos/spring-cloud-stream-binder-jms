@@ -19,7 +19,7 @@ package org.springframework.cloud.stream.binder.jms.utils;
 import java.util.concurrent.ConcurrentHashMap;
 import javax.jms.Topic;
 
-import org.apache.commons.lang.math.NumberUtils;
+import org.apache.commons.lang3.math.NumberUtils;
 
 /**
  * @author José Carlos Valero
