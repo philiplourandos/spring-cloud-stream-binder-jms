@@ -80,10 +80,10 @@ public class JMSMessageChannelBinder
 		this.extendedBindingProperties = extendedBindingProperties;
 	}
 
-
 	@Override
 	protected MessageHandler createProducerMessageHandler(ProducerDestination producerDestination,
-			ExtendedProducerProperties<JmsProducerProperties> producerProperties) throws Exception {
+			ExtendedProducerProperties<JmsProducerProperties> producerProperties,
+                        MessageChannel mc) throws Exception {
 		TopicPartitionRegistrar topicPartitionRegistrar = new TopicPartitionRegistrar();
 		Session session = connectionFactory.createConnection().createSession(true, 1);
 
